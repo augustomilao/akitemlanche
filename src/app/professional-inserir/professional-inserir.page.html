@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+  <ion-title>Inserir Profissional</ion-title>
+</ion-toolbar>
+</ion-header>
+ 
+<ion-content >
+
+    <ion-item>
+        <ion-label> * Id: </ion-label>
+          <ion-input type="text"[(ngModel)]="data.id" required></ion-input>
+        </ion-item>
+  
+
+    <ion-item>
+    <ion-label> * Nome: </ion-label>
+      <ion-input type="text"[(ngModel)]="data.nome" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label> * Email: </ion-label>
+      <ion-input type="email" [(ngModel)]="data.email"  required></ion-input>
+      </ion-item>
+
+      <ion-item>
+      <ion-label> * Senha: </ion-label>
+      <ion-input type="password" [(ngModel)]="data.senha"  required></ion-input>
+      </ion-item>
+
+      <ion-item>
+      <ion-label> * Telefone: </ion-label>
+      <ion-input type="text" [(ngModel)]="data.telefone" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+      <ion-label> * Endereço: </ion-label>
+      <ion-input type="text" [(ngModel)]="data.endereco" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+      <ion-label> * Profissão: </ion-label>
+      <ion-select placeholder="Selecione sua profissão" [(ngModel)]="data.profissao" required>
+        <ion-select-option value="marceneiro">Marceneiro</ion-select-option>
+        <ion-select-option value="pintor">Pintor</ion-select-option>
+        <ion-select-option value="eletricista">Eletricista</ion-select-option>
+        <ion-select-option value="hidráulico">Hidráulico</ion-select-option>
+  
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-button (click)="submitForm()">Enviar</ion-button>
+    </ion-item>
+ 
+</ion-content>

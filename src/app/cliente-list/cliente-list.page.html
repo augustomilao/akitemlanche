@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Lista todos os Clientes</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Email</th>
+        <th scope="col">Endereço</th>
+        <th scope="col">Telefone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of clientesData">
+        <td>{{ item.id }}</td>
+        <td>{{ item.nome }}</td>
+        <td>{{ item.email }}</td>
+        <td>{{ item.endereco }}</td>
+        <td>{{ item.telefone }}</td>
+        <td style="display: flex">
+          <ion-button color="warning" size="small" routerLink='/cliente-editar/{{item.id}}'>
+            <ion-icon name="create"></ion-icon>
+          </ion-button>
+          <ion-button color="danger" size="small" (click)="delete(item)">
+            <ion-icon name="trash"></ion-icon>
+          </ion-button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ion-button [routerLink]="['/cliente-inserir']">
+    Inserir Cliente
+  </ion-button>
+</ion-content>
+ 

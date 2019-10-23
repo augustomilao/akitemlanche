@@ -1,0 +1,32 @@
+{
+  "profissionais": [
+    {
+      "nome": "",
+      "email": "",
+      "senha": "",
+      "telefone": "",
+      "endereco": "",
+      "profissao": "",
+      "id": ""
+    },
+    {
+      "id": "1",
+      "nome": "Au",
+      "email": "sddjaokdjio",
+      "senha": "ijsdoaijodioa",
+      "telefone": "iasojdiojaiojd",
+      "endereco": "saijodjio",
+      "profissao": "pintor"
+    }
+  ],
+  "clientes": [
+    {
+      "id": "dsadasigu",
+      "nome": "ANA",
+      "email": "dsadsadsadansd",
+      "senha": "sadsadsad",
+      "telefone": "saddsadas",
+      "endereco": "dasdsadsad"
+    }
+  ]
+}
