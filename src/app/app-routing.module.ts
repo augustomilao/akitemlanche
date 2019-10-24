@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'cliente-delete', loadChildren: './cliente-delete/cliente-delete.module#ClienteDeletePageModule' },
   { path: 'cliente-editar/:id', loadChildren: './cliente-editar/cliente-editar.module#ClienteEditarPageModule' },
   { path: 'cliente-list', loadChildren: './cliente-list/cliente-list.module#ClienteListPageModule' },
-  { path: 'cliente-login', loadChildren: './cliente-login/cliente-login.module#ClienteLoginPageModule' },
+  { path: 'politicas', loadChildren: './politicas/politicas.module#PoliticasPageModule' },
 ];
 
 @NgModule({
